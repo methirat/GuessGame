@@ -80,12 +80,12 @@ class In_game(Finish):
                     self.victory_message(self.number, self.guess)
                 elif self.guess < self.number:
                     if self.number - self.guess >= 3:
-                        print("\nนั่นมันเล็กเกินไป!")
+                        print("\nตัวเลขน้อยเกินไป!")
                     else:
-                        print("เฉียดฉิว! ใหญ่กว่านี้!")  
+                        print("เกือบแล้ว! ใหญ่กว่านี้!")  
                 elif self.guess > self.number:
                     if self.guess - self.number >= 3:
-                        print("\nมันใหญ่เกินไป")
+                        print("\nตัวเลขใหญ่เกินไป ลดลงๆ")
                     else:
                         print("เฉียดฉิว! เล็กลงหน่อย!")
                 else:
@@ -117,7 +117,7 @@ def main():
     except Exception as e:
         print(e)
     finally :
-        print("\n\nCreated By 6504101373")
+        print("\n\nCreated By Super mari0")
 
 if __name__ == "__main__":
     main()
